@@ -1,0 +1,59 @@
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.about-section {
+    padding: 2rem;
+    font-family: 'dancing+script';
+    background-color: #faf8f8da; /* Light background */
+    text-align: center;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .about-text {
+      text-align: left; /* Align text to the left */
+      font-size: 1.1rem;
+      line-height: 1;
+      max-width: 1400px;
+      margin: 0 auto; /* Center the text container */
+      padding: 1rem;
+      font-style: italic;
+      color: #00000088;
+
+  
+      .column-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        gap: 1rem; /* Space between columns */
+  
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+  
+      @media (max-width: 768px) {
+        .column-container {
+          grid-template-columns: 1fr; /* Single column for mobile */
+        }
+      }
+    }
+  
+    .read-more-btn {
+      background-color: #d10034;
+      color: white;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid black;
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+  
+      &:hover {
+        background-color: #e64a19;
+      }
+    }
+  }
+  

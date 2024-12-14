@@ -1,0 +1,29 @@
+.layout {
+  display: flex;
+  height: 100vh;
+
+  app-navbar {
+    width: 300px; /* Match the navbar width */
+    height: 100%;
+    flex-shrink: 0; /* Prevent the navbar from shrinking */
+  }
+
+  .content {
+    flex: 1; /* Take up remaining space */
+    overflow-y: auto; /* Allow scrolling for content overflow */
+    
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    app-navbar {
+      width: 100%; /* Full width for mobile */
+      height: auto; /* Adjust height for content */
+    }
+
+    .content {
+      margin-left: 0; /* Reset margin for mobile view */
+    }
+  }
+}

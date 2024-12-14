@@ -1,0 +1,142 @@
+.navbar-logo {
+  text-align: center; /* Center the logo */
+  padding: 1rem 0;
+  background-color: white; /* Match the navbar background */
+  border-bottom: 1px solid #e0e0e0; /* Optional: Add a subtle divider */
+  border-right: 1px solid #e0e0e0; /* Optional: Add a divider on the right */
+
+  img {
+    max-width: 80%; /* Scale the logo to fit nicely */
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Navbar Top Bar */
+.navbar-mobile {
+  display: flex; /* Hidden on desktop */
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  padding: 0 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+  .hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .mobile-logo {
+    margin-left: auto; /* Push the logo to the right */
+    img {
+      max-width: 100px; /* Smaller logo for mobile */
+      height: auto;
+    }
+  }
+}
+.list-group {
+  
+  background-color: white; /* White background */
+  font-weight: bold; /* Bold letters */
+  padding: 0;
+  height: 100vh; /* Full height for vertical navbar */
+  position: fixed; /* Fixed position on the left */
+  width: 300px; /* Increase width for desktop */
+  overflow-y: auto; /* Scrollable if content exceeds height */
+  transition: all 0.3s ease-in-out;
+  border-right: 1px solid #e0e0e0; /* Optional: Add a divider on the right */
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+
+  a {
+    color: black; /* Black text */
+    text-decoration: none; /* Remove underline */
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e0e0e0; /* Line separating each word */
+    transition: color 0.3s ease;
+
+    &:hover {
+      
+      text-decoration: underline; /* Add underline on hover */
+    }
+
+    &.active {
+      color: #ffffff; /* Highlighted color */
+      background-color: #e70b42;
+      
+    }
+
+    &:last-child {
+      border-bottom: none; /* Remove bottom border for the last item */
+    }
+  }
+}
+
+/* Adjust content to account for the wider navbar */
+@media (min-width: 769px) {
+  .content {
+    margin-left: 300px; /* Match the navbar width */
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .list-group {
+    width: 100%; /* Full width for mobile view */
+    height: auto;
+    position: relative;
+  }
+}
+
+
+  .list-group.show {
+    display: block; /* Show when toggled */
+  }
+
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-mobile {
+      display: flex;
+    }
+    .desktop-logo {
+      display: none; /* Hide desktop logo on mobile */
+    }
+    .list-group {
+      height: auto; /* Adjust height for mobile */
+      width: 100%; /* Full width */
+      position: relative; /* Relative position */
+      display: none; /* Hide the menu by default */
+    }
+
+    .navbar-logo img {
+      max-width: 60%; /* Reduce logo size for mobile */
+    }
+  
+    .list-group.show {
+      display: block; /* Show menu when toggled */
+    }
+  }
+  
+  /* Hamburger Button */
+  .hamburger {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+  
+    @media (max-width: 768px) {
+      display: block; /* Show on mobile */
+    }
+  }
+  

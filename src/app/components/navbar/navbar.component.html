@@ -1,0 +1,27 @@
+<!-- Desktop Logo -->
+<div class="navbar-logo desktop-logo" *ngIf="!isMobile">
+  <a routerLink="/app-home">
+    <img src="/assets/images/LOGO_optimized.png" alt="Restaurant Logo" />
+  </a>
+</div>
+
+<!-- Mobile Top Bar -->
+<div class="navbar-mobile" *ngIf="isMobile">
+  <button class="hamburger" (click)="toggleMenu()">☰</button>
+  <a routerLink="/app-home" class="mobile-logo">
+    <img src="/assets/images/LOGO_optimized.png" alt="Restaurant Logo" />
+  </a>
+</div>
+
+<!-- Navbar Links -->
+<div class="list-group list-group-flush" [class.show]="!isMobile || isMenuOpen">
+  @for (entry of menu; track entry) {
+    <a
+      class="list-group-item list-group-item-action"
+      [routerLink]="entry.routerLink"
+      [routerLinkActive]="['active']"
+    >
+      {{ entry.text }}
+    </a>
+  }
+</div>

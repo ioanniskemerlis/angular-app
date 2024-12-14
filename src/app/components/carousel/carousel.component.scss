@@ -1,0 +1,11 @@
+.carousel-item img {
+    object-fit: cover;
+    height: 450px; /* Adjust height as needed */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  

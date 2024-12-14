@@ -1,0 +1,13 @@
+<section class="about-section">
+    <h2>OVEN PUB THE RESTAURANT STORY & THE TREE</h2>
+    <div class="about-text">
+      <div class="container">
+        <!-- Use innerHTML to allow HTML rendering -->
+        <p *ngFor="let paragraph of aboutText; let i = index" [hidden]="i >= 2 && !isExpanded" [innerHTML]="paragraph"></p>
+      </div>
+    </div>
+    <button class="read-more-btn" (click)="toggleReadMore()">
+      {{ isExpanded ? 'Read Less' : 'Read More' }}
+    </button>
+  </section>
+  

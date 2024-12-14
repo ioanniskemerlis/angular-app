@@ -1,0 +1,11 @@
+<section class="popular-dishes">
+    <h2 class="section-title">Our Family Recommends</h2>
+    <div class="dishes-container">
+      <div class="dish-card" *ngFor="let dish of dishes">
+        <img [src]="dish.image" [alt]="dish.name" class="dish-image" />
+        <h3 class="dish-name">{{ dish.name }}</h3>
+        <p class="dish-description">{{ dish.description }}</p>
+      </div>
+    </div>
+  </section>
+  
