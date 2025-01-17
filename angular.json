@@ -54,8 +54,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "maximumWarning": "700kB",
+                  "maximumError": "900kB"
                 }
               ],
               "outputHashing": "all"
@@ -103,6 +103,9 @@
             ],
             "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

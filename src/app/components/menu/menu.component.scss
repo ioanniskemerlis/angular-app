@@ -2,7 +2,7 @@
 
 .menu {
   font-family: 'Montserrat', sans-serif;
-  padding: 2rem;
+  padding: 0.2rem;
   max-width: 1400px;
   margin: 0 auto;
 
@@ -16,11 +16,110 @@
 
   .menu-category {
     margin-bottom: 2rem;
+    padding: 1.5rem; /* Add padding for content */
+    border-radius: 8px;
+    background-color: white; /* Default white background */
+    position: relative;
+
+    /* Special Background for specific categories */
+    &.special-background {
+      background: url('../../../assets/images/coctail-background.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 0;
+        border-radius: 8px;
+      }
+
+      h2 {
+        color: #f8f8f8;
+        border-bottom-color: #ffffff;
+        position: relative;
+        z-index: 1;
+      }
+
+      .menu-item {
+        color: white;
+        border-bottom-color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        z-index: 1;
+
+        .menu-item-header {
+          h3 {
+            color: white !important;
+          }
+
+          span {
+            color: #ffd700;
+          }
+        }
+
+        p {
+          color: white !important;
+        }
+      }
+    }
+
+    &.special-background2 {
+      background: url('../../../assets/images/aperol-background.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+        border-radius: 8px;
+      }
+
+      h2 {
+        color: #f8f8f8;
+        border-bottom-color: #ffffff;
+        position: relative;
+        z-index: 1;
+      }
+
+      .menu-item {
+        color: white;
+        border-bottom-color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        z-index: 1;
+
+        .menu-item-header {
+          h3 {
+            color: white !important;
+          }
+
+          span {
+            color: #ffd700;
+          }
+        }
+
+        p {
+          color: white !important;
+        }
+      }
+    }
 
     h2 {
       font-size: 1.75rem;
-      font-weight: 700; /* Bold Montserrat */
-      border-bottom: 3px solid #d10034; /* Orange underline */
+      font-weight: 700;
+      border-bottom: 3px solid #d10034;
       padding-bottom: 0.5rem;
       margin-bottom: 1rem;
       color: #181818;
@@ -28,83 +127,94 @@
 
     .menu-item {
       margin-bottom: 1.5rem;
+      border-bottom: 1px solid #d10034;
+
+      &:last-child {
+        border-bottom: none;
+      }
 
       .menu-item-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        h3 {
-          font-size: 1.8rem;
-          font-weight: 400; /* Bold Montserrat */
-          color: #000000;
-          margin: 0;
+        .menu-item-name {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #000000;
+            margin: 0;
+          }
+
+          .vegan-icon {
+            width: 20px;
+            height: 20px;
+          }
         }
 
         span {
           font-size: 1.25rem;
-          font-weight: 400; /* Regular Montserrat */
-          color: #d10034; /* Emphasize price in orange */
+          font-weight: 400;
+          color: #d10034;
         }
       }
 
       p {
         font-size: 1rem;
-        font-weight: 400; /* ExtraLight Montserrat */
-        font-style: italic; /* Italicized text */
-        color: #3b4918; /* Subtle green for descriptions */
+        font-weight: 400;
+        font-style: italic;
+        color: #3b4918;
         margin: 0.5rem 0 0;
       }
-      border-bottom:1px solid #d10034; //#e0e0e0
-      &:last-child {
-        border-bottom: none; /* Remove border from the last item */
-      }      
     }
   }
 
-/* Media Query: Adjust all font sizes for smaller screens */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem; /* Smaller font for title */
+  /* Media Query: Adjust font sizes */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .menu-category h2 {
+      font-size: 1.5rem;
+    }
+
+    .menu-category .menu-item .menu-item-header h3 {
+      font-size: 1.2rem !important;
+    }
+
+    .menu-category .menu-item .menu-item-header span {
+      font-size: 1rem !important;
+    }
+
+    .menu-category .menu-item p {
+      font-size: 0.9rem !important;
+    }
   }
 
-  .menu-category h2 {
-    font-size: 1.5rem; /* Smaller category title */
-  }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.75rem;
+    }
 
-  .menu-category .menu-item .menu-item-header h3 {
-    font-size: 1.2rem; /* Smaller menu item name */
-  }
+    .menu-category h2 {
+      font-size: 1.25rem;
+    }
 
-  .menu-category .menu-item .menu-item-header span {
-    font-size: 1rem; /* Smaller price */
-  }
+    .menu-category .menu-item .menu-item-header h3 {
+      font-size: 1.1rem !important;
+    }
 
-  .menu-category .menu-item p {
-    font-size: 0.9rem; /* Smaller description */
-  }
-}
+    .menu-category .menu-item .menu-item-header span {
+      font-size: 0.9rem !important;
+    }
 
-/* Media Query: Extra Small Devices */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.75rem; /* Title even smaller */
+    .menu-category .menu-item p {
+      font-size: 0.8rem !important;
+    }
   }
-
-  .menu-category h2 {
-    font-size: 1.25rem;
-  }
-
-  .menu-category .menu-item .menu-item-header h3 {
-    font-size: 1.1rem; /* Smaller menu item name */
-  }
-
-  .menu-category .menu-item .menu-item-header span {
-    font-size: 0.9rem; /* Smaller price */
-  }
-
-  .menu-category .menu-item p {
-    font-size: 0.8rem; /* Smaller description */
-  }
-}
 }

@@ -13,17 +13,17 @@ export class PopularDishesComponent {
     {
       name: 'Margherita Pizza',
       description: 'A classic pizza topped with fresh tomatoes, mozzarella, and basil.',
-      image: '/assets/images/margherita.jpg'
+      image: 'assets/images/margherita.jpg'
     },
     {
       name: 'Pepperoni Pizza',
       description: 'Topped with spicy pepperoni, mozzarella cheese, and tomato sauce.',
-      image: '/assets/images/pepperoni.jpg'
+      image: 'assets/images/pepperoni.jpg'
     },
     {
       name: 'Pasta Carbonara',
       description: 'Spaghetti tossed with creamy sauce, pancetta, and parmesan cheese.',
-      image: '/assets/images/carbonara.jpg'
+      image: 'assets/images/carbonara.jpg'
     }
   ];
 }

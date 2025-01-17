@@ -1,10 +1,22 @@
 <section class="menu">
   <h1>Our Family Menu</h1>
-  <div class="menu-category" *ngFor="let category of menuItems">
+  <div
+    class="menu-category"
+    *ngFor="let category of menuItems"
+    [ngClass]="{
+      'special-background': category.category === 'Cocktails',
+      'special-background2': category.category === 'Spritz Selection'
+    }"
+  >
     <h2>{{ category.category }}</h2>
     <div class="menu-item" *ngFor="let item of category.items">
       <div class="menu-item-header">
-        <h3>{{ item.name }}</h3>
+        <!-- Name and Icon Container -->
+        <div class="menu-item-name">
+          <h3>{{ item.name }}</h3>
+          <img *ngIf="item.isVegan" src="assets/icons/vegan-icon.png" alt="Vegan Icon" class="vegan-icon" />
+        </div>
+        <!-- Price -->
         <span>{{ item.price }}</span>
       </div>
       <p>{{ item.description }}</p>
