@@ -5,7 +5,8 @@
     *ngFor="let category of menuItems"
     [ngClass]="{
       'special-background': category.category === 'Cocktails',
-      'special-background2': category.category === 'Spritz Selection'
+      'special-background2': category.category === 'Spritz Selection',
+      'special-background3': category.category === 'Wines'
     }"
   >
     <h2>{{ category.category }}</h2>

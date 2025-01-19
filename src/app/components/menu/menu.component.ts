@@ -60,7 +60,7 @@ export class MenuComponent {
     {
       category: 'Fresh Stone Baked Napolitan Style Pizzas since 1986 (Wood Oven)',
       items: [
-        { name: 'Margerita', description: '', price: '€11,90' },
+        { name: 'Margherita', description: '', price: '€11,90' },
         { name: 'Marinara', description: 'Tomato sauce with olive oil & garlic', price: '€10,90', },
         { name: 'Special Oven Pub', description: 'Mozzarela, onions, Red & Green peppers, Salami , Ham, Fresh Mushrooms', price: '€15,50' },
         { name: 'Caperese', description: 'Tomato sauce, onion, green pepper, olive, capers, oregano, olive oil (optional: sausage).', price: '€15,50/€17,50' },
@@ -143,7 +143,31 @@ export class MenuComponent {
         { name: 'Yogurt with Honey & Nuts', description: '', price: '€8,50' },
       ],
     },
-
+    {
+      category: 'Wines',
+      items: [
+        { name: 'Idylle d`Achinos', description: '', price: '€10' },
+        { name: 'Ergo Sauvignon Blanc', description: '', price: '€10' },
+        { name: 'Malagouzia Single Vineyard', description: '', price: '€10' },
+        { name: 'Malagouzia Gerovasileiou Vineyard', description: '', price: '€10' },
+        { name: 'Vivlia Country Vineyard Sauvignon Blanc', description: '', price: '€10' },
+        { name: 'Portes Merlot', description: '', price: '€10' },
+        { name: 'Thema Paulides Vineyard Sauvignon Blanc', description: '', price: '€10' },
+        { name: 'Paraga Rhodites Vine Sauvignon Blanc', description: '', price: '€10' },
+        { name: 'Three Witches Rose Semi Sweet', description: '', price: '€10' },
+        { name: 'Plagies Gerakion Sauvignon Blanc', description: '', price: '€10' },
+        { name: 'Historia Viognier Arvanitis Vineyard', description: '', price: '€10' },
+        { name: 'Kehrimpari Rhodites Kehris Vineyard', description: '', price: '€10' },
+        { name: 'Little Ark Moschofilero', description: '', price: '€10' },
+        { name: 'Natureo Muscat De-Alcoholized', description: '', price: '€10' },
+        { name: 'Alpha Sauvignon Blanc', description: '', price: '€10' },
+        { name: 'Little Ark Dry White', description: '', price: '€10' },
+        { name: 'Paraga Merlot Syrah', description: '', price: '€10' },
+        { name: 'Nemea Red Agiorgítiko Papaioannou Estate', description: '', price: '€10' },
+        { name: 'Avantis Vineyard Syrah', description: '', price: '€10' },
+        { name: 'Dafnios Vidiano', description: '', price: '€10' }
+      ],
+    },
     // aperol
     {
       category: 'Spritz Selection',
