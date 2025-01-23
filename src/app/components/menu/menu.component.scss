@@ -219,6 +219,13 @@
       }
     }
   }
+  .wine-section-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem;
+    color: #ffd900; /* Gold for wine headers */
+    text-align: left;
+  }
 
   /* Media Query: Adjust font sizes */
   @media (max-width: 768px) {

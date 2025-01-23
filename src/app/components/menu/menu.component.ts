@@ -48,11 +48,9 @@ export class MenuComponent {
         { name: 'Napoli', description: 'A classic Vegan Dish But so Good , enjoy with Spaghetti', price: '€10,80' },
         { name: 'Penne Pesto', description: '', price: '€13,80' },
         { name: 'Chicken Penne Pesto', description: '', price: '€15,80' },
-        { name: 'Bologna ( Classic )', description: 'Spaghetti Bolognaise', price: '€13,80' },
         { name: 'Cipollini con Pollo e Funghi', description: 'Egg tagliatelle, cooked in homemade sauce with chicken, fresh mushrooms & onion, topped with cooking cream and lots of secrets.', price: '€17,80' },
         { name: 'Tortellini Cacciatora', description: 'Brandy Mushrooms , garlic and bacon in a rich Creamy base.', price: '€16,80' },
         { name: 'Carbonara', description: 'Guanciale', price: '€18,80' },
-        { name: 'Lasagne Oven Pub', description: 'Stoned baked , topped with parmesan & Mozzarella', price: '€14,00' },
         { name: 'Capriccio Penne', description: 'No explanations - Speechless !!! , a bit chilly ,choose Chicken Or Pork Fillet', price: '€16,80' },
         { name: 'Napoli Spaghetti & Pollo', description: 'Crispy Chicken Strips served like a Classic Spaghetti & meatballs , topped with Mozzarella', price: '€17,80' },
       ],
@@ -65,12 +63,9 @@ export class MenuComponent {
         { name: 'Special Oven Pub', description: 'Mozzarella, onions, Red & Green peppers, Salami , Ham, Fresh Mushrooms', price: '€15,50' },
         { name: 'Caperese', description: 'Tomato sauce, onion, green pepper, olive, capers, oregano, olive oil (optional: sausage).', price: '€15,50/€17,50' },
         { name: 'Vodkatoni', description: 'Tomato sauce/cream sauce, mozzarella, rigatoni, parmesan, vodka sauce, chicken.', price: '€22.00' },
-        { name: 'Pizza Flakes', description: 'Cream, mozzarella, bacon, potato flakes.', price: '€16.80' },
         { name: 'Mediterranean Greek Pizza', description: 'Garlic, Feta cheese, olives, green peppers, Tomato', price: '€15,50' },
         { name: 'Pizza Carbonara', description: '', price: '€17,80' },
         { name: 'Pizza Marinero', description: 'Octopus, Tuna , Mussels', price: '€24,50' },
-        { name: 'Pizza Stathis (Our Chef)', description: 'Tomato sauce, parmesan, mozzarella, fresh basil, olive oil.', price: '€13.90' },
-        { name: 'Cherry Lady', description: 'Cream/tomato sauce, parmesan, mozzarella, breaded chicken, cherry tomatoes, basil cream.', price: '€14.90' },
         { name: 'Chicken Pesto Pizza', description: 'Cream base pizza, pesto sauce, chicken, parmesan & mozzarella', price: '€15,90' },
         { name: 'Build your Own Pizza', description: '', price: '' },
       ],
@@ -123,7 +118,6 @@ export class MenuComponent {
       items: [
         { name: 'Starters', description: '', price: '' },
         { name: 'Bruschetta Mediterranean', description: 'With Local Feta {vegan feta or normal } , Olives and oregano', price: '€11,80' , isVegan: true},
-        { name: 'Vegetable Soup', description: 'Home made Vegetable Soup', price: '€9,80' , isVegan: true},
         { name: 'Courgette’s', description: 'Courgette’s Local Fried', price: '€9,80', isVegan: true },
         { name: 'Main Courses', description: '', price: '' },
         { name: 'Beyond meat Vegan Vodka Chicken Parmigiana', description: 'A classic in Vodka', price: '€23,00', isVegan: true },    
@@ -131,7 +125,8 @@ export class MenuComponent {
         { name: 'Kritharoto', description: 'Blue Cheese, carrots & courgettes (vegetarian)', price: '€14,50', isVegan: true },
         { name: 'Spagheti Napoli', description: '', price: '€10,80', isVegan: true },
         { name: 'Vegan Risotto', description: '', price: '€13,50', isVegan: true },
-        { name: 'Vegetarian Risotto', description: '', price: '€14,50', isVegan: true }
+        { name: 'Vegetarian Risotto', description: '', price: '€14,50', isVegan: true },
+        { name: 'Vegetarian Carbonara', description: '', price: '€21,80', isVegan: true },
       ],
     },
     {
@@ -145,28 +140,36 @@ export class MenuComponent {
     },
     {
       category: 'Wines',
-      items: [
-        { name: 'Idylle d`Achinos', description: 'A pale pink rosé with aromas of rose, orange peel, and cherry, offering a refreshing, crisp finish.', price: '€10' },
+      whiteWines: [
         { name: 'Ergo Sauvignon Blanc', description: 'A refreshing Greek Sauvignon Blanc with exotic fruit aromas, citrus notes, and a zesty, lemony finish.', price: '€10' },
         { name: 'Malagouzia Single Vineyard', description: 'A vibrant Greek Malagouzia with floral, citrus, and herbal aromas, offering a crisp, balanced palate and a long, lively finish.', price: '€10' },
         { name: 'Malagouzia Gerovasileiou Vineyard', description: 'A refined Malagouzia with floral, citrus, and tropical fruit aromas, balanced acidity, and a long, elegant finish.', price: '€10' },
         { name: 'Vivlia Country Vineyard Sauvignon Blanc', description: 'A vibrant white wine with exotic fruit and herbal aromas, balanced acidity, and a versatile, elegant profile.', price: '€10' },
-        { name: 'Portes Merlot', description: 'A rich Merlot with cherry, plum, vanilla, violet, and smoky notes, offering a velvety palate and soft tannins for a long, complex finish.', price: '€10' },
         { name: 'Thema Paulides Vineyard Sauvignon Blanc', description: 'A refreshing Greek white wine with crisp lemon aromas and vibrant acidity, perfect for pairing with seafood and summer dishes.', price: '€10' },
         { name: 'Paraga Rhodites Vine Sauvignon Blanc', description: 'A crisp and fresh white wine with citrus aromas, vibrant acidity, and a smooth finish, perfect for pairing with light pasta dishes and seafood.', price: '€10' },
-        { name: 'Three Witches Rose Semi Sweet', description: 'A vibrant semi-sweet rosé with cherry, strawberry, and floral aromas, refreshing acidity, and a caramel-tinged finish.', price: '€10' },
         { name: 'Plagies Gerakion Sauvignon Blanc', description: 'A complex and balanced Malagouzia/Sauvignon Blanc blend with citrus, floral, and subtle oak notes, offering a creamy texture, refreshing acidity, and a lingering fruity finish.', price: '€10' },
         { name: 'Historia Viognier Arvanitis Vineyard', description: 'A fresh and fruity white wine with notes of green apple, pear, apricot, and melon, offering refreshing acidity, subtle sweetness, and exceptional value for its quality.', price: '€10' },
         { name: 'Kehrimpari Rodites Kehris Vineyard', description: 'A classic retsina made from 100% Roditis, with aromas of fresh pine, pear, melon, and mastic, offering a balanced body and a long, herbal finish.', price: '€10' },
-        { name: 'Little Ark Moschofilero', description: 'A delightful rosé Moschofilero with a floral bouquet, notes of quince, cherry, and strawberry, a crisp palate, and a refreshing, balanced finish.', price: '€10' },
         { name: 'Natureo Muscat De-Alcoholized', description: 'A flavorful, alcohol-free wine, Natureo retains the aromas, antioxidants, vitamins, and minerals of the grape, offering a satisfying experience for those avoiding alcohol.', price: '€10' },
         { name: 'Alpha Sauvignon Blanc', description: 'A top-selling Greek Sauvignon Blanc with a balance of Old and New World styles, offering vibrant aromas of citrus, peach, mango, white flowers, and a crisp, refreshing acidity.', price: '€10' },
         { name: 'Little Ark Dry White', description: 'A refined Assyrtiko-Malagouzia blend offering aromatic elegance and crisp freshness, perfect for pairing with delicate Greek seafood dishes', price: '€10' },
+        { name: 'Dafnios Vidiano', description: 'A vibrant Vidiano from Crete with aromas of lemon marmalade, bergamot, mango, and chamomile, offering balanced acidity, richness, and an impressive, lingering finish.', price: '€10' },
+
+      ],
+      redWines: [
+        { name: 'Portes Merlot', description: 'A rich Merlot with cherry, plum, vanilla, violet, and smoky notes, offering a velvety palate and soft tannins for a long, complex finish.', price: '€10' },
+        { name: 'Avantis Vineyard Syrah', description: 'A bold Syrah...', price: '€10' },
         { name: 'Paraga Merlot Syrah', description: 'A smooth red blend of Xinomavro, Merlot, and Syrah, offering vibrant aromas of berries and green pepper, balanced acidity, soft tannins, and a refreshing finish.', price: '€10' },
         { name: 'Nemea Red Agiorgítiko Papaioannou Estate', description: 'A classic Nemea Agiorgitiko with rich red fruit aromas, hints of vanilla and caramel, balanced acidity, refined tannins, and excellent aging potential.', price: '€10' },
         { name: 'Avantis Vineyard Syrah', description: 'A bold and complex Greek Syrah with aromas of black pepper, dark fruits, licorice, and violet, complemented by spicy oak notes, velvety tannins, and excellent aging potential.', price: '€10' },
-        { name: 'Dafnios Vidiano', description: 'A vibrant Vidiano from Crete with aromas of lemon marmalade, bergamot, mango, and chamomile, offering balanced acidity, richness, and an impressive, lingering finish.', price: '€10' },
-        { name: '******Wine Glass', description: '', price: '€8.8' }
+      ],
+      roseWines: [
+        { name: 'Idylle dAchinos', description: 'A pale pink rosé with aromas of rose, orange peel, and cherry, offering a refreshing, crisp finish.', price: '€10' },
+        { name: 'Three Witches Rose Semi Sweet', description: 'A vibrant semi-sweet rosé with cherry, strawberry, and floral aromas, refreshing acidity, and a caramel-tinged finish.', price: '€10' },
+        { name: 'Little Ark Moschofilero', description: 'A delightful rosé Moschofilero with a floral bouquet, notes of quince, cherry, and strawberry, a crisp palate, and a refreshing, balanced finish.', price: '€10' },
+      ],
+      singleglass: [
+        { name: 'Single Wine Glass', description: 'Ask our experienced staff for recommendations', price: '€8.8' },
       ],
     },
     // aperol

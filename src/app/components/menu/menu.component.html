@@ -10,17 +10,66 @@
     }"
   >
     <h2>{{ category.category }}</h2>
-    <div class="menu-item" *ngFor="let item of category.items">
-      <div class="menu-item-header">
-        <!-- Name and Icon Container -->
-        <div class="menu-item-name">
-          <h3>{{ item.name }}</h3>
-          <img *ngIf="item.isVegan" src="assets/icons/vegan-icon.png" alt="Vegan Icon" class="vegan-icon" />
-        </div>
-        <!-- Price -->
-        <span>{{ item.price }}</span>
+<!-- Wine Sections -->
+<div *ngIf="category.category === 'Wines'">
+  <h3 class="wine-section-header">Red Wines</h3>
+  <div class="menu-item" *ngFor="let item of category.redWines">
+    <div class="menu-item-header">
+      <div class="menu-item-name">
+        <h3>{{ item.name }}</h3>
       </div>
-      <p>{{ item.description }}</p>
+      <span>{{ item.price }}</span>
     </div>
+    <p>{{ item.description }}</p>
   </div>
+
+  <h3 class="wine-section-header">White Wines</h3>
+  <div class="menu-item" *ngFor="let item of category.whiteWines">
+    <div class="menu-item-header">
+      <div class="menu-item-name">
+        <h3>{{ item.name }}</h3>
+      </div>
+      <span>{{ item.price }}</span>
+    </div>
+    <p>{{ item.description }}</p>
+  </div>
+
+  <h3 class="wine-section-header">Rosé Wines</h3>
+  <div class="menu-item" *ngFor="let item of category.roseWines">
+    <div class="menu-item-header">
+      <div class="menu-item-name">
+        <h3>{{ item.name }}</h3>
+      </div>
+      <span>{{ item.price }}</span>
+    </div>
+    <p>{{ item.description }}</p>
+  </div>
+
+<h3 class="wine-section-header">Single Glass</h3>
+  <div class="menu-item" *ngFor="let item of category.singleglass">
+    <div class="menu-item-header">
+      <div class="menu-item-name">
+        <h3>{{ item.name }}</h3>
+      </div>
+      <span>{{ item.price }}</span>
+    </div>
+    <p>{{ item.description }}</p>
+  </div>
+</div>
+
+<!-- Default Items for Non-Wine Categories -->
+<div *ngIf="category.category !== 'Wines'">
+  <div class="menu-item" *ngFor="let item of category.items">
+    <div class="menu-item-header">
+      <div class="menu-item-name">
+        <h3>{{ item.name }}</h3>
+        <img *ngIf="item.isVegan" src="assets/icons/vegan-icon.png" alt="Vegan Icon" class="vegan-icon" />
+      </div>
+      <span>{{ item.price }}</span>
+    </div>
+    <p>{{ item.description }}</p>
+  </div>
+</div>
+</div>
 </section>
+
