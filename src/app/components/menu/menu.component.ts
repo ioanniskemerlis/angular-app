@@ -14,7 +14,7 @@ export class MenuComponent {
       category: 'Antipasti',
       items: [
         //{ name: 'Focaccia Oven Pub', description: 'Focaccia stone-baked, classic with rosemary and salt. Ask for the garlic dip.', price: '€9,80', isVegan: true },
-        { name: '*****Olives with Foccacia', description: 'Local Olives served with our Homemade Focaccia', price: '€7,80', isVegan: true },
+        //{ name: '*****Olives with Foccacia', description: 'Local Olives served with our Homemade Focaccia', price: '€7,80', isVegan: true },
         { name: 'Humous Home made', description: 'Fresh Mashed Chickpeas in a classic recipe that we Master in our Version Oven Pub,served with Local stoned baked Bread', price: '€8,80' , isVegan: true},
         { name: 'Tzatziki Local Recipe', description: 'Tzatziki with a Corfu Local Fuse Touch , Served with Local stoned baked Bread', price: '€8,80' , isVegan: true},
         { name: 'Tomato & Mozzarella', description: 'A Classic but simply so Good, Served with Local stoned baked Bread', price: '€12,80', isVegan: true },
