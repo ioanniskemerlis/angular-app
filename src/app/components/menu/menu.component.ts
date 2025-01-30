@@ -13,12 +13,11 @@ export class MenuComponent {
     {
       category: 'Antipasti',
       items: [
-        { name: 'Focaccia Oven Pub', description: 'Focaccia stone-baked, classic with rosemary and salt. Ask for the garlic dip.', price: '€9,80', isVegan: true },
-        { name: 'Vegetable Soup', description: 'Homemade Vegetable Soup', price: '€9,80', isVegan: true },
-        { name: 'Olives with Foccacia', description: 'Local Olives served with our Homemade Focaccia', price: '€7,80', isVegan: true },
+        //{ name: 'Focaccia Oven Pub', description: 'Focaccia stone-baked, classic with rosemary and salt. Ask for the garlic dip.', price: '€9,80', isVegan: true },
+        { name: '*****Olives with Foccacia', description: 'Local Olives served with our Homemade Focaccia', price: '€7,80', isVegan: true },
         { name: 'Humous Home made', description: 'Fresh Mashed Chickpeas in a classic recipe that we Master in our Version Oven Pub,served with Local stoned baked Bread', price: '€8,80' , isVegan: true},
         { name: 'Tzatziki Local Recipe', description: 'Tzatziki with a Corfu Local Fuse Touch , Served with Local stoned baked Bread', price: '€8,80' , isVegan: true},
-        { name: 'Tomato & Mozzarella', description: 'A Classic but simply so Good, served with Foccacia', price: '€12,80', isVegan: true },
+        { name: 'Tomato & Mozzarella', description: 'A Classic but simply so Good, Served with Local stoned baked Bread', price: '€12,80', isVegan: true },
         { name: 'Napoli Crispy corn chicken dippers with Mozzarella', description: 'Unique Chicken Chicken Strips , cooked and Served with Home Made Napoletan Sauce on the side with Melted Mozzarella', price: '€13,50' },
         { name: 'Ballotino , Beef Meat Balls Starters experience', description: 'My Nona knew how to Make a Meat Balls Starter , Simply extraordinary, served with Local stoned baked Bread ', price: '€13,50' },
         { name: 'Stoned Baked Feta Cheese', description: 'Stoned Baked Local Feta Cheese , Made as My Grandmother used to do it , with Chilli ,Oregano and Tomatoes ! to get you in Greek Dance of Flavours, served with Local stoned baked Bread', price: '€11,40', isVegan: true },
@@ -26,8 +25,8 @@ export class MenuComponent {
         { name: 'Calamari', description: 'Greek Local Corfian Fresh Calamaries , cooked crispy and fried, served with garlic sauce', price: '€14,40' },
         { name: 'Bruschetta classic', description: '(2 slices)', price: '€7,80' },
         { name: 'Bruschetta Mediterranean', description: 'Like the classic but with feta & olives (2 slices)', price: '€9,50' },
-        { name: 'Garlic Bread', description: '', price: '€4,50' },
-        { name: 'Garlic Bread with Cheese', description: '', price: '€5,50' },
+        //{ name: 'Garlic Bread', description: '', price: '€4,50' },
+        //{ name: 'Garlic Bread with Cheese', description: '', price: '€5,50' },
         { name: 'VODKA Corn Chicken Dippers Alla Napoli', description: 'Forgive us  !! But we added Vodka , enjoy Fresh Basil and Mozzarella , Napolitan experience with Chicken in Corn FLakes', price: '€16,80' },
         { name: 'Saganaki Prawns', description: 'Fresh  Prawns Stone baked in Most popular Seafood starter in Greece! With Feta cheese', price: '€15,80' },
         { name: 'Fresh Home made Chips', description: '', price: '€6,00', isVegan: true },
@@ -55,21 +54,21 @@ export class MenuComponent {
         { name: 'Napoli Spaghetti & Pollo', description: 'Crispy Chicken Strips served like a Classic Spaghetti & meatballs , topped with Mozzarella', price: '€17,80' },
       ],
     },
-    {
-      category: 'Fresh Stone Baked Napolitan Style Pizzas since 1986 (Wood Oven)',
-      items: [
-        { name: 'Margherita', description: '', price: '€11,90' },
-        { name: 'Marinara', description: 'Tomato sauce with olive oil & garlic', price: '€10,90', },
-        { name: 'Special Oven Pub', description: 'Mozzarella, onions, Red & Green peppers, Salami , Ham, Fresh Mushrooms', price: '€15,50' },
-        { name: 'Caperese', description: 'Tomato sauce, onion, green pepper, olive, capers, oregano, olive oil (optional: sausage).', price: '€15,50/€17,50' },
-        { name: 'Vodkatoni', description: 'Tomato sauce/cream sauce, mozzarella, rigatoni, parmesan, vodka sauce, chicken.', price: '€22.00' },
-        { name: 'Mediterranean Greek Pizza', description: 'Garlic, Feta cheese, olives, green peppers, Tomato', price: '€15,50' },
-        { name: 'Pizza Carbonara', description: '', price: '€17,80' },
-        { name: 'Pizza Marinero', description: 'Octopus, Tuna , Mussels', price: '€24,50' },
-        { name: 'Chicken Pesto Pizza', description: 'Cream base pizza, pesto sauce, chicken, parmesan & mozzarella', price: '€15,90' },
-        { name: 'Build your Own Pizza', description: '', price: '' },
-      ],
-    },
+    // {
+    //   category: 'Fresh Stone Baked Napolitan Style Pizzas since 1986 (Wood Oven)',
+    //   items: [
+    //     { name: 'Margherita', description: '', price: '€11,90' },
+    //     { name: 'Marinara', description: 'Tomato sauce with olive oil & garlic', price: '€10,90', },
+    //     { name: 'Special Oven Pub', description: 'Mozzarella, onions, Red & Green peppers, Salami , Ham, Fresh Mushrooms', price: '€15,50' },
+    //     { name: 'Caperese', description: 'Tomato sauce, onion, green pepper, olive, capers, oregano, olive oil (optional: sausage).', price: '€15,50/€17,50' },
+    //     { name: 'Vodkatoni', description: 'Tomato sauce/cream sauce, mozzarella, rigatoni, parmesan, vodka sauce, chicken.', price: '€22.00' },
+    //     { name: 'Mediterranean Greek Pizza', description: 'Garlic, Feta cheese, olives, green peppers, Tomato', price: '€15,50' },
+    //     { name: 'Pizza Carbonara', description: '', price: '€17,80' },
+    //     { name: 'Pizza Marinero', description: 'Octopus, Tuna , Mussels', price: '€24,50' },
+    //     { name: 'Chicken Pesto Pizza', description: 'Cream base pizza, pesto sauce, chicken, parmesan & mozzarella', price: '€15,90' },
+    //     { name: 'Build your Own Pizza', description: '', price: '' },
+    //   ],
+    // },
     {
       category: 'Home Made Vodka Recipes',
       items: [
@@ -91,8 +90,8 @@ export class MenuComponent {
     {
       category: 'Traditional Local Cuisine Stone-Baked',
       items: [
-        { name: 'Fresh Local GYROS Chicken or Pork', description: 'Served with stone baked Focaccia and Home made Tzatziki', price: '€12,80' },
-        { name: 'Traditional Souvlaki Large', description: 'Chicken or Pork ,served with stone baked Focaccia and Tzatziki Home made', price: '€14,80' },
+        { name: 'Fresh Local GYROS Chicken or Pork', description: 'Served with Local stoned baked Bread and Home made Tzatziki', price: '€12,80' },
+        { name: 'Traditional Souvlaki Large', description: 'Chicken or Pork ,Served with Local stoned baked Bread and Tzatziki Home made', price: '€14,80' },
         { name: 'Moussaka', description: '', price: '€13,80' },
         { name: 'Wild Boar Stifado', description: '', price: '€23,80' },
         { name: 'Local Sofrito Beef', description: 'Local Beef Sofrito Stone Baked Recipe , its a must try dish in Corfu', price: '€19,80' },
@@ -141,6 +140,7 @@ export class MenuComponent {
     {
       category: 'Wines',
       whiteWines: [
+        { name: 'Single Wine Glass', description: 'Ask our experienced staff for recommendations', price: '€8.8' },
         { name: 'Ergo Sauvignon Blanc', description: 'A refreshing Greek Sauvignon Blanc with exotic fruit aromas, citrus notes, and a zesty, lemony finish.', price: '€10' },
         { name: 'Malagouzia Single Vineyard', description: 'A vibrant Greek Malagouzia with floral, citrus, and herbal aromas, offering a crisp, balanced palate and a long, lively finish.', price: '€10' },
         { name: 'Malagouzia Gerovasileiou Vineyard', description: 'A refined Malagouzia with floral, citrus, and tropical fruit aromas, balanced acidity, and a long, elegant finish.', price: '€10' },
@@ -157,6 +157,7 @@ export class MenuComponent {
 
       ],
       redWines: [
+        { name: 'Single Wine Glass', description: 'Ask our experienced staff for recommendations', price: '€8.8' },
         { name: 'Portes Merlot', description: 'A rich Merlot with cherry, plum, vanilla, violet, and smoky notes, offering a velvety palate and soft tannins for a long, complex finish.', price: '€10' },
         { name: 'Avantis Vineyard Syrah', description: 'A bold Syrah...', price: '€10' },
         { name: 'Paraga Merlot Syrah', description: 'A smooth red blend of Xinomavro, Merlot, and Syrah, offering vibrant aromas of berries and green pepper, balanced acidity, soft tannins, and a refreshing finish.', price: '€10' },
@@ -164,12 +165,10 @@ export class MenuComponent {
         { name: 'Avantis Vineyard Syrah', description: 'A bold and complex Greek Syrah with aromas of black pepper, dark fruits, licorice, and violet, complemented by spicy oak notes, velvety tannins, and excellent aging potential.', price: '€10' },
       ],
       roseWines: [
+        { name: 'Single Wine Glass', description: 'Ask our experienced staff for recommendations', price: '€8.8' },
         { name: 'Idylle dAchinos', description: 'A pale pink rosé with aromas of rose, orange peel, and cherry, offering a refreshing, crisp finish.', price: '€10' },
         { name: 'Three Witches Rose Semi Sweet', description: 'A vibrant semi-sweet rosé with cherry, strawberry, and floral aromas, refreshing acidity, and a caramel-tinged finish.', price: '€10' },
         { name: 'Little Ark Moschofilero', description: 'A delightful rosé Moschofilero with a floral bouquet, notes of quince, cherry, and strawberry, a crisp palate, and a refreshing, balanced finish.', price: '€10' },
-      ],
-      singleglass: [
-        { name: 'Single Wine Glass', description: 'Ask our experienced staff for recommendations', price: '€8.8' },
       ],
     },
     // aperol
