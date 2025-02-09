@@ -19,7 +19,7 @@ export class NavBarComponent {
     { text: "Menu", routerLink: "app-menu"},
     { text: "Location", routerLink: "app-location"},
     { text: "Contact", routerLink: "app-contact"},
-    { text: "Certificates", routerLink: "app-certificates"},
+    { text: "Our Chef", routerLink: "app-certificates"},
   ]
 
   isMenuOpen = false;
