@@ -1,19 +1,24 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-certificates',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './certificates.component.html',
   styleUrl: './certificates.component.scss'
 })
 export class CertificatesComponent {
   chef = {
-    name: 'Chef Giovanni Rossi',
+    name: 'Chef Theodoros Ioannou',
     image: 'assets/images/chef.jpg', // Replace with the correct path
-    bio: `With over 30 years of culinary experience, Chef Giovanni Rossi has worked in some of the finest restaurants in Italy and France. 
-          His passion for authentic flavors and fresh ingredients led him to open Oven Pub, where he continues to innovate while preserving 
-          traditional Italian and Mediterranean recipes. Chef Giovanni believes in crafting dishes that tell a story, embracing both classic 
-          and modern techniques to create unforgettable dining experiences.`
+    bio: [
+      `Passion, precision, and an unrelenting pursuit of culinary excellence define Chef Theodoros Ioannou. With a journey that began in Larissa, he honed his craft mastering the art of flavor, technique, and innovation. From the bustling kitchens of Michelin-starred ASPIC in Paris to leading as Executive Chef in some of Greece’s most luxurious hotels and restaurants, his experience is as diverse as it is impressive.`,
+      
+      `Chef Theodoros brings a deep respect for ingredients, blending tradition with modern creativity. His refined approach to crafting dishes tells a story on every plate. Now, as our Executive Chef, he curates a menu that embodies authenticity, innovation, and a passion for bold flavors.`,
+      
+      `Step into our kitchen and taste the artistry of a chef whose hands have shaped culinary experiences from Athens to Mykonos and beyond.`
+    ]
   };
 }

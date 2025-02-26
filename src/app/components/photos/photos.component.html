@@ -1,5 +1,20 @@
-<section class="section">
-    <h1>Photos</h1>
-    <p>Placeholder content for this section.</p>
-  </section>
-  
+<div class="popular-dishes">
+  <h2>Our Dishes</h2>
+
+  <div class="gallery">
+    <div class="card" *ngFor="let dish of dishes" (click)="openImage(dish)">
+      <img [src]="dish.src" [alt]="dish.name" class="card-image">
+      <div class="card-content">
+        <h3>{{ dish.name }}</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for enlarged dish -->
+  <div class="modal" *ngIf="selectedDish" (click)="closeImage()">
+    <div class="modal-content">
+      <h3>{{ selectedDish.name }}</h3>
+      <img [src]="selectedDish.src" [alt]="selectedDish.name">
+    </div>
+  </div>
+</div>

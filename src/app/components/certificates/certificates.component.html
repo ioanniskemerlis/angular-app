@@ -1,7 +1,10 @@
-<section class="chef-history">
+<div class="chef-history">
   <div class="chef-container">
-    <img [src]="chef.image" alt="Chef {{ chef.name }}" class="chef-image">
-    <h2>{{ chef.name }}</h2>
-    <p>{{ chef.bio }}</p>
+    <img [src]="chef.image" alt="{{ chef.name }}" class="chef-image">
+    
+    <div class="chef-info">
+      <h2>{{ chef.name }}</h2>
+      <p *ngFor="let paragraph of chef.bio">{{ paragraph }}</p>
+    </div>
   </div>
-</section>
+</div>
