@@ -11,19 +11,29 @@ import { Component } from '@angular/core';
 export class PopularDishesComponent {
   dishes = [
     {
-      name: 'Fish',
-      description: 'A classic fish topped with fresh tomatoes, mozzarella, and basil.',
-      image: 'assets/images/margherita.jpg'
+      name: 'Shrimp Kataifi',
+      description: 'Two classic flavours from land of the sun. Fresh shrimps wrapped with crunchy kataifi, served with spicy sauce.',
+      image: 'assets/images/dish5.jpg'
     },
     {
-      name: 'Steak',
-      description: 'Topped with spicy pepperoni, mozzarella cheese, and tomato sauce.',
-      image: 'assets/images/pepperoni.jpg'
+      name: 'Traditional Black Pork Pancetta',
+      description: 'Recipe from our mountains, slow cooked pork pancetta, served with mashed potatoes and caramelised sauce.',
+      image: 'assets/images/dish1.jpg'
     },
     {
       name: 'Pasta Carbonara',
       description: 'Spaghetti tossed with creamy sauce, pancetta, and parmesan cheese.',
       image: 'assets/images/carbonara.jpg'
+    },
+    {
+      name: 'Local Mixed Stoned Baked Original Paella',
+      description: 'Healthy and fresh seafood dish, served with aromatic rice, squid, mussels, shrimps and chicken fillet.',
+      image: 'assets/images/dish4.jpg'
+    },
+    {
+      name: 'Popcorn Wafer Tart',
+      description: 'Served with namelaka milk chocolate, white chocolate cream and popcorn wafer.',
+      image: 'assets/images/dish3.jpg'
     }
   ];
 }

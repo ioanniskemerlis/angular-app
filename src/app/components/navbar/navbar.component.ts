@@ -15,7 +15,7 @@ import { WINDOW } from '../../services/window.service';
 export class NavBarComponent {
   menu: MenuEntry[] = [
     { text: "Home", routerLink: "app-home"},
-    { text: "Photos", routerLink: "app-photos"},
+    //{ text: "Photos", routerLink: "app-photos"},
     { text: "Menu", routerLink: "app-menu"},
     { text: "Location", routerLink: "app-location"},
     { text: "Contact", routerLink: "app-contact"},

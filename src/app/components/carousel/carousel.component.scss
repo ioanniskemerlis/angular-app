@@ -1,6 +1,8 @@
 .carousel-item img {
     object-fit: cover;
     height: 450px; /* Adjust height as needed */
+    width: 100%;
+    background-color: black;
   }
   
   .carousel-control-prev-icon,
