@@ -15,12 +15,7 @@ export class CarouselComponent {
     { image: 'assets/images/dish3.jpg', alt: 'Popcorn Waffle' },
     { image: 'assets/images/dish4.jpg', alt: 'Paella' },
     { image: 'assets/images/dish55.jpg', alt: 'Shrimp Kataifi' },
-    { image: 'assets/images/chickencrispy.jpg', alt: 'Crispy Chicken' },
-    { image: 'assets/images/moussaka.jpg', alt: 'Moussaka' },
-    { image: 'assets/images/napolitan.jpg', alt: 'Napolitan' },
-    { image: 'assets/images/saganaki.jpg', alt: 'Saganaki' },
-    { image: 'assets/images/stonebakedfeta.jpg', alt: 'Stone Baked Feta' },
-    { image: 'assets/images/octopus.jpg', alt: 'Octopus' }
+    { image: 'assets/images/dish2.jpg', alt: 'octopus' },
   ];
 }
 
